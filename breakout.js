@@ -183,7 +183,7 @@ function bottomCollision(ball, block) { //a is above b (ball is below block)
 }
 
 function leftCollision(ball, block) { //a is left of b (ball is left of block)
-    return detectCollision(ball, block) && (ball.x + ball.width-block.width) >= (block.x+block.width-ball.width;
+    return detectCollision(ball, block) && (ball.x + ball.width) >= block.x;
 }
 
 function rightCollision(ball, block) { //a is right of b (ball is right of block)
